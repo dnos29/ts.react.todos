@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -34,4 +33,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  padding: 0px 30px;
+}
+nav {
+  display: flex;
+  background-color: aliceblue;
+  padding: 20px 30px;
+}
+nav li{
+  list-style-type:none;
+  margin-right: 20px;
 }

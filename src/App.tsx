@@ -22,21 +22,23 @@ function App() {
             <li><Link to="/tasks">Tasks</Link></li>
           </nav>
         </div>
+        <div className="container">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/tasks" exact>
+              <Tasks />
+            </Route>
+            <Route path="/tasks/:id">
+              <Task />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/tasks" exact>
-          <Tasks />
-        </Route>
-        <Route path="/tasks/:id">
-          <Task />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
     </Router>
   );
 }
